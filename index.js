@@ -28,7 +28,7 @@ let choixRetenu = "";
 let questions = [
   {
     text: "Who is the 40th President of the United-States?",
-    imgSrc: "/img/martin-luther-king.png",
+    imgSrc: "./img/martin-luther-king.png",
     choiceA: "Ronald Reagan",
     choiceB: "Barack Obama",
     choiceC: "George Washington",
@@ -38,7 +38,7 @@ let questions = [
   {
     text:
       "Which of the following rights is guaranteed by the First Amendment to the Constitution??",
-    imgSrc: "/img/martin-luther-king.png",
+    imgSrc: "./img/martin-luther-king.png",
     choiceA: "The right to bear arms",
     choiceB: "The right of free speech",
     choiceC: "The right to remain silent",
@@ -47,7 +47,7 @@ let questions = [
   },
   {
     text: "What is the official language of the United-State?",
-    imgSrc: "/img/martin-luther-king.png",
+    imgSrc: "./img/martin-luther-king.png",
     choiceA: "English",
     choiceB: "Spanish",
     choiceC: "None",
@@ -56,7 +56,7 @@ let questions = [
   },
   {
     text: "Who is the 40th President of the United-States?",
-    imgSrc: "/img/martin-luther-king.png",
+    imgSrc: "./img/martin-luther-king.png",
     choiceA: "Ronald Reagan",
     choiceB: "Barack Obama",
     choiceC: "Georges Washington",
@@ -65,7 +65,7 @@ let questions = [
   },
   {
     text: "What is the official language of the United-State?",
-    imgSrc: "/img/martin-luther-king.png",
+    imgSrc: "./img/martin-luther-king.png",
     choiceA: "English",
     choiceB: "Spanish",
     choiceC: "None",
@@ -217,15 +217,15 @@ function displayResult() {
   let img = "";
 
   if (resultPerCent >= 80) {
-    img = "/img/5.png";
+    img = "./img/5.png";
   } else if (resultPerCent >= 60) {
-    img = "/img/4.png";
+    img = "./img/4.png";
   } else if (resultPerCent >= 40) {
-    img = "/img/3.png";
+    img = "./img/3.png";
   } else if (resultPerCent >= 20) {
-    img = "/img/2.png";
+    img = "./img/2.png";
   } else {
-    img = "/img/1.png";
+    img = "./img/1.png";
   }
   result.innerHTML = `<img src="${img}">`;
   result.innerHTML += `<div>${resultPerCent}%</div>`;

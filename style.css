@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(/img/American-Flag-Banner-drawing.jpg);
+    background-image: url("./img/American-Flag-Banner-drawing.jpg");
     background-repeat: no-repeat;
 }
 
