@@ -19,9 +19,9 @@ const choiceD = document.getElementById("d");
 const counter = document.getElementById("counter");
 const tempsJauge = document.getElementById("contentu-jauge");
 const progress = document.getElementById("progress");
+
+//RESULT PAGE
 const result = document.getElementById("results");
-const startOver = document.getElementById("start-over");
-const backToLanding = document.getElementById("back-to-landing-page");
 
 let choixRetenu = "";
 
@@ -251,3 +251,15 @@ result.style.textAlign = "center";
 result.style.padding = "40px";
 
 result.style.fontWeight = "bold";
+
+//const startOver = document.querySelector(".start-over");
+
+// let landResult = document.createElement("div");
+// landResult.className = "start-over";
+// landResult.textContent = "Back";
+// result.appendChild(landResult);
+
+// landResult.addEventListener("click", function backToLanding() {
+//   result.style.display = "none";
+//   landingPage.style.display = "block";
+// });
