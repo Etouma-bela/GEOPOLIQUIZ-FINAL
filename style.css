@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/img/American-Flag-Banner-drawing.jpg);
+    background-repeat: no-repeat;
+}
+
+#structure-globale {
+    margin : 20px auto;
+    background-color: white;
+    height: 500px;
+    width : 900px;
+    border-radius: 5px;
+    box-shadow: 3px 8px #BF0A30, -1em 0 .4em #002868;
+    position: relative;
+}
+
+
+#content-landing {
+    height: 250px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo-landing img {
+    width: 250px;
+}
+
+#logo-landing {
+    width: 250px;
+}
+
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    padding-top: 30px;
+    color: #002868;
+}
+
+.red-text {
+    color: #BF0A30;
+}
+
+#btnRules {
+    border: #002868;
+    background-color: #002868;
+    color: white;
+    padding: 30px;
+    width: 125px;
+    cursor: pointer;
+}
+
+#start-playing {
+    border: #BF0A30;
+    background-color: #BF0A30;
+    color: white;
+    padding: 30px;
+    width: 125px;
+    cursor: pointer;
+}
+
+#btnRules:hover {
+    background-color: #325286;
+}
+
+#start-playing:hover {
+    background-color: #980826;
+}
+
+#quizz {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+#rules-page {
+    display: none;
+}
+
+
+#image-qst {
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+
+#image-qst img {
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+    margin-top: 3px;
+}
+
+
+#question {
+    width:500px;
+    height : 125px;
+    position: relative;
+    margin: 5px;
+    left: 400px;
+}
+
+#question p {
+    padding : 15px;
+    font-size: 1.25em;
+    color: #002868;
+}
+
+#choices {
+    width : 400px;
+    position: absolute;
+    right : 0;
+    top : 175px;
+    padding : 10px;
+}
+
+.proposition {
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid #BF0A30;
+    background-color: #BF0A30;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    margin: 15px;
+}
+
+.proposition:hover {
+    background-color: #002868;
+    border: 1px solid #002868;
+    font-weight: bold;
+}
+
+#timer{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+
+#counter{
+    font-size: 3em;
+}
+
+#jauge {
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+
+#contentu-jauge {
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+
+#progress {
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog {
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+#results {
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+
+#results img {
+    position: absolute;
+    top:120px;
+    left:325px;
+}
+
+#results p {
+    position: absolute;
+    display: flex;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.win {
+    background-color: green;
+}
+
+.loose {
+    background-color: red;
+}
+
+#content-organisation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+}
+
+#actual-rules {
+    border : 1px solid #BF0A30;
+    background-color: #BF0A30;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    height: 300px;
+    line-height: 1.6;
+}
+
+#philosophy {
+    background-color: #002868;
+    border: 1px solid #002868; 
+    color: white;
+    width: 300px;
+    padding: 10px;
+    height: 300px;
+    line-height: 1.8;
+}
+
+.geo-link {
+    color: #BF0A30;
+}
+
+#philosophy p {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 12px;
+}
+
+#philosophy h2 {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 12px; 
+}
+
+#actual-rules p {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 12px; 
+}
+
+#actual-rules h2 {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 12px; 
+}
+
+#btn-close {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#start-via-rules {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+#page-result {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
